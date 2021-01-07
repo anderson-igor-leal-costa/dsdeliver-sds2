@@ -26,7 +26,7 @@ public class Order implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	
-	private Long Id;
+	private Long id;
 	private String address; 
 	private Double latitude;
 	private Double longitude; 
@@ -47,7 +47,7 @@ public class Order implements Serializable {
 
 	public Order(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status) {
 		super();
-		Id = id;
+		this.id = id;
 		this.address = address;
 		this.latitude = latitude;
 		this.longitude = longitude;
@@ -56,11 +56,11 @@ public class Order implements Serializable {
 	}
 
 	public Long getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(Long id) {
-		Id = id;
+		this.id = id;
 	}
 
 	public String getAddress() {
