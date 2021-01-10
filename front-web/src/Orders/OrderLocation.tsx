@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import AsyncSelect from 'react-select/async'; 
 import { fetchLocalMapBox } from '../api';
+import { OrderLocationData } from './types';
 
 
 const inicialPosition = {
