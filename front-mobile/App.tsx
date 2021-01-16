@@ -7,12 +7,13 @@ import Routes from './src/Routes';
 
 export default function App() {
   let [fontsLoaded] = useFonts({
-    OpenSans_700Bold,
+    OpenSans_700Bold, OpenSans_400Regular
   });
 
   if (!fontsLoaded) {
     return <AppLoading />;
   }
+  
   return (
     <View style={styles.container}>
          
